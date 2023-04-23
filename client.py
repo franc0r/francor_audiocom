@@ -13,7 +13,6 @@ class AudioClient:
 
 		# create socket
 		self.client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-		port = 4982
 
 		socket_address = (host_ip,port)
 		self.client_socket.connect(socket_address) 
@@ -39,7 +38,7 @@ class AudioClient:
 			frame = pickle.loads(frame_data)
 			self.audio.put(frame)
 
-			self.client_socket.close()
+		self.client_socket.close()
 
 if __name__ == '__main__':
 	params = sys.argv[1:]

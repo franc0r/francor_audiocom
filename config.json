@@ -1,6 +1,7 @@
 {
     "Schmiddy": {
-        "IP":"192.168.2.88",
+        "HostIP":"192.168.2.88",
+        "ReceiverIP":"192.168.2.10",
         "Port":"4982",
         "mode": "rs",
         "type":"basestation"
@@ -15,7 +16,7 @@
     },
 
     "NUC": {
-        "IP":"192.168.2.10",
+        "HostIP":"192.168.2.10",
         "ReceiverIP":"192.168.2.42",
         "Port":"4982",
         "mode":"rs",
@@ -23,7 +24,8 @@
     },
 
     "Empty": {
-        "IP":"192.168.2.1",
+        "HostIP":"192.168.2.1",
+        "ReceiverIP":"192.168.2.0",
         "Port":"4982",
         "mode":"",
         "type":"robot"
