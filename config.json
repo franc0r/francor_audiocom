@@ -1,13 +1,29 @@
 {
-    "Basestation": {
-        "IP":"192.168.178.51",
-        "name":"hey"
+    "Schmiddy": {
+        "IP":"192.168.2.88",
+        "Port":"4982",
+        "mode": "rs",
+        "type":"basestation"
     },
 
-    "Robi": {
-        "IP":"192.168.178.51",
-        "name":"yo"
+    "Tobi": {
+        "IP":"192.168.2.42",
+        "Port":"4982",
+        "mode":"rs",
+        "type": "basestation"
+    },
+
+    "NUC": {
+        "IP":"192.168.2.10",
+        "Port":"4982",
+        "mode":"rs",
+        "type":"robot"
+    },
+
+    "Empty": {
+        "IP":"192.168.2.1",
+        "Port":"4982",
+        "mode":"",
+        "type":"robot"
     }
-
-
 }

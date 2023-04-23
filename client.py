@@ -8,7 +8,7 @@ ps.showPlot(context,name)
 
 # create socket
 client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host_ip = '192.168.178.166'
+host_ip = '192.168.178.51'
 port = 4982
 
 socket_address = (host_ip,port)
