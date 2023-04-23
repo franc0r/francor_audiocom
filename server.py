@@ -9,13 +9,13 @@ class AudioServer:
 		mode =  'send'
 		name = 'SERVER TRANSMITTING AUDIO'
 		self.audio, context= ps.audioCapture(mode=mode)
-		if showui:
-			ps.showPlot(context,name)
+		#if showui:
+		#ps.showPlot(context,name)
 
 		# Socket Create
 		backlog = 5
 		self.server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-		socket_address = (host_ip,port)
+		socket_address = (host_ip,int(port))
 		print('STARTING SERVER AT',socket_address,'...')
 		self.server_socket.bind(socket_address)
 		self.server_socket.listen(backlog)
@@ -41,5 +41,6 @@ class AudioServer:
 
 if __name__ == '__main__':
 	params = sys.argv[1:]
+	print(params)
 	audio_server = AudioServer(*params)
 	audio_server.run()

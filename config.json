@@ -29,5 +29,13 @@
         "Port":"4982",
         "mode":"",
         "type":"robot"
+    },
+
+    "Test": {
+        "HostIP":"192.168.178.166",
+        "ReceiverIP":"192.168.178.166",
+        "Port":"4982",
+        "mode":"rs",
+        "type":"robot"
     }
 }

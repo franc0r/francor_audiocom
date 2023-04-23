@@ -14,7 +14,7 @@ class AudioClient:
 		# create socket
 		self.client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-		socket_address = (host_ip,port)
+		socket_address = (host_ip,int(port))
 		self.client_socket.connect(socket_address) 
 		print("CLIENT CONNECTED TO",socket_address)
 
